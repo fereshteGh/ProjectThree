@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href="myStyle.css" rel="stylesheet">
+    <style>
+
+
+        h1 {
+            color: #998eff
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>individualCustomer</title>
+</head>
+<body>
+<form dir="rtl" action="/IndividualCustomerServlet" method="post">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="fa">
+
+    نام :
+    <input type="text" class="text" name="firstName" style="height: 30px">
+    <br><br>
+    نام خانوادگی :
+
+    <input type="text" class="text" name="lastName" style="height: 30px">
+    <br><br>
+    تاریخ تولد :
+
+    <input type="text" class="text" name="birthDate" style="height: 30px">
+    <br><br>
+    کد ملی :
+
+    <input type="text" class="text" name="customerId" style="height: 30px">
+    <br><br>
+    <input type="submit" class="button" name="add" value="ثبت" style="font-size: 40px;width: 200px">
+    <input type="hidden" name="action" value="add">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href="myStyle.css" rel="stylesheet">
+    <style>
+
+
+        h1{color: #998eff}
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>individualCustomer</title>
+</head>
+<body>
+<form dir="rtl" action="/LegalCustomerServlet" method="post">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="fa">
+نام شرکت :
+    <input type="text" class="text" name="companyName" style="height: 30px">
+    <br><br>
+تاریخ ثبت :
+    <input type="text" class="text" name="registerDate" style="height: 30px">
+    <br><br>
+    کد اقتصادی :
+
+    <input type="text" class="text" name="companyId"style="height: 30px" >
+    <br><br>
+    <input type="submit" class="button" name="delete" value="حذف"  style="font-size: 40px;width: 100px">
+    <input type="hidden" name="action" value="delete">
+</form>
+
+</body>
+</html>
