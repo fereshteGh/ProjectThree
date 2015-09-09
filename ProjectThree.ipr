@@ -9,6 +9,9 @@
           <element id="directory" name="classes">
             <element id="module-output" name="ProjectThree" />
           </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="mysql:mysql-connector-java:5.1.36" />
+          </element>
         </element>
       </root>
     </artifact>
@@ -176,6 +179,13 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="DotinSchool2">
+      <words>
+        <w>jdbc</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ProjectThree.iml" filepath="$PROJECT_DIR$/ProjectThree.iml" />
@@ -186,6 +196,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Maven: javax.servlet:servlet-api:2.5">
@@ -199,22 +210,14 @@
         <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/" />
       </SOURCES>
     </library>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <library name="mysql:mysql-connector-java:5.1.36" type="repository">
+      <properties maven-id="mysql:mysql-connector-java:5.1.36" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </project>
 

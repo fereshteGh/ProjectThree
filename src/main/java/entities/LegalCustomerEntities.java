@@ -1,23 +1,19 @@
-package domainModel;
+package entities;
 
-import java.util.Date;
-
-public class LegalCustomer extends Customer {
+public class LegalCustomerEntities extends CustomerEntities {
     private String companyName;
-    private Date registerDate;
+    private String registerDate;
     private String economyId;
 
-    public LegalCustomer(String companyName, Date registerDate, String economyId) {
-        this.companyName = companyName;
-        this.registerDate = registerDate;
-        this.economyId = economyId;
+    public LegalCustomerEntities() {
+
     }
 
     public String getCompanyName() {
         return companyName;
     }
 
-    public Date getRegisterDate() {
+    public String getRegisterDate() {
         return registerDate;
     }
 
@@ -29,7 +25,7 @@ public class LegalCustomer extends Customer {
         this.companyName = companyName;
     }
 
-    public void setRegisterDate(Date registerDate) {
+    public void setRegisterDate(String registerDate) {
         this.registerDate = registerDate;
     }
 

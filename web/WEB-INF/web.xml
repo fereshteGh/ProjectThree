@@ -5,19 +5,55 @@
          version="3.1">
     <servlet>
         <servlet-name>IndividualCustomerServlet</servlet-name>
-        <servlet-class>presentation.IndividualCustomerServlet</servlet-class>
+        <servlet-class>presentation.IndividualCustomerPresent</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LegalCustomerServlet</servlet-name>
-        <servlet-class>presentation.LegalCustomerServlet</servlet-class>
+        <servlet-class>presentation.LegalCustomerPresent</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>IndividualCustomerServlet</servlet-name>
-        <url-pattern>/IndividualCustomerServlet</url-pattern>
+        <url-pattern>/addIndividualCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndividualCustomerServlet</servlet-name>
+        <url-pattern>/deleteIndividualCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndividualCustomerServlet</servlet-name>
+        <url-pattern>/updateIndividualCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndividualCustomerServlet</servlet-name>
+        <url-pattern>/searchIndividualCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndividualCustomerServlet</servlet-name>
+        <url-pattern>/showResultIndividualCustomer</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LegalCustomerServlet</servlet-name>
-        <url-pattern>/LegalCustomerServlet</url-pattern>
+        <url-pattern>/LegalCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LegalCustomerServlet</servlet-name>
+        <url-pattern>/addLegalCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LegalCustomerServlet</servlet-name>
+        <url-pattern>/deleteLegalCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LegalCustomerServlet</servlet-name>
+        <url-pattern>/updateLegalCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LegalCustomerServlet</servlet-name>
+        <url-pattern>/searchLegalCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LegalCustomerServlet</servlet-name>
+        <url-pattern>/showResultLegalCustomer</url-pattern>
     </servlet-mapping>
 </web-app>
