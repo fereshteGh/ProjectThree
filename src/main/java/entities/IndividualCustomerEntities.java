@@ -7,7 +7,7 @@ public class IndividualCustomerEntities extends CustomerEntities {
     private String nationalCode;
 
     public IndividualCustomerEntities() {
-           }
+    }
 
     public String getFirstName() {
         return firstName;
@@ -26,7 +26,7 @@ public class IndividualCustomerEntities extends CustomerEntities {
     }
 
     public void setFirstName(String firstName) {
-       this.firstName = firstName;
+        this.firstName = firstName;
     }
 
     public void setLastName(String lastName) {

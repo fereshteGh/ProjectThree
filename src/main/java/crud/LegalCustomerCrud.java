@@ -109,7 +109,7 @@ public class LegalCustomerCrud {
         Connection connection;
         String queryString;
         ResultSet result;
-        LegalCustomerEntities legalCustomerRetrieved = null;
+        LegalCustomerEntities legalCustomerRetrieved = new LegalCustomerEntities();
         try {
             connection = Crud.getInstance().getConnection();
             queryString = "SELECT * FROM legalCustomer WHERE customerNumber = ?";
@@ -117,7 +117,8 @@ public class LegalCustomerCrud {
             statement.setString(1, legalCustomer.getCustomerNumber());
             result = statement.executeQuery();
             if (result.next()) {
-                legalCustomerRetrieved = new LegalCustomerEntities(result.getString("companyName"), result.getString("registerDate"), result.getString("economyId"));
+            //    legalCustomerRetrieved.setCompanyName();
+
             }
             return legalCustomerRetrieved;
         } catch (SQLException e) {

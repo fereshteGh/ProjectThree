@@ -12,23 +12,23 @@
 </head>
 <body>
 <form dir="rtl" action="/updateIndividualCustomer" method="post">
-     نام :
-    <input type="text" class="text" name="firstName" style="height: 30px">
+First name :
+    <input type="text" class="text" name="firstName" value="${formValues.whatever}" >
     <br><br>
-    نام خانوادگی :
+Last name :
 
-    <input type="text" class="text" name="lastName" style="height: 30px">
+    <input type="text" class="text" name="lastName" value="${formValues.}">
     <br><br>
-    تاریخ تولد :
+Birth date :
 
-    <input type="text" class="text" name="birthDate" style="height: 30px">
+    <input type="text" class="text" name="birthDate" value="${formValues.whatever}">
     <br><br>
-    کد ملی :
+National code :
 
-    <input type="text" class="text" name="nationalCode" style="height: 30px">
+    <input type="text" class="text" name="nationalCode" value="${formValues.whatever}" >
     <br><br>
-    <input type="submit" class="button" name="update" value="به روز رسانی" style="font-size: 40px">
-    <input type="hidden" name="action" value="update">
+    <input type="submit" class="button" name="update" value="update">
+
 </form>
 
 </body>

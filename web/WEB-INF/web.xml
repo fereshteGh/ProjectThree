@@ -21,6 +21,10 @@
         <url-pattern>/deleteIndividualCustomer</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+    <servlet-name>IndividualCustomerServlet</servlet-name>
+    <url-pattern>/editIndividualCustomer</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
         <servlet-name>IndividualCustomerServlet</servlet-name>
         <url-pattern>/updateIndividualCustomer</url-pattern>
     </servlet-mapping>
@@ -43,6 +47,10 @@
     <servlet-mapping>
         <servlet-name>LegalCustomerServlet</servlet-name>
         <url-pattern>/deleteLegalCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LegalCustomerServlet</servlet-name>
+        <url-pattern>/editLegalCustomer</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LegalCustomerServlet</servlet-name>

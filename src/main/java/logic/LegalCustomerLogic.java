@@ -10,13 +10,13 @@ public class LegalCustomerLogic {
     private LegalCustomerEntities legalCustomerEntities;
     public void checkFields(LegalCustomerEntities legalCustomer) throws EmptyFieldException {
         if (legalCustomer.getCompanyName() == null || legalCustomer.getCompanyName().length() == 0) {
-            throw new EmptyFieldException();
+            throw new EmptyFieldException("company name could not be empty");
         }
         if (legalCustomer.getRegisterDate() == null ) {
-            throw new EmptyFieldException();
+            throw new EmptyFieldException("registry date could not be empty");
         }
         if (legalCustomer.getEconomyId() == null || legalCustomer.getEconomyId().length() == 0 ) {
-            throw new EmptyFieldException();
+            throw new EmptyFieldException("economy code could not be empty");
         }
         if(LegalCustomerCrud.checkEconomyExistence(legalCustomer.getEconomyId())){
             try {

@@ -10,33 +10,29 @@ public class Crud {
     static final String DB_URL = "jdbc:mysql://localhost/";
     private static final String dbName = "customers";
     Connection connection;
-   protected Crud(){
-   }
+
     public static Crud getInstance() {
-        if(instance==null){
-            instance= new Crud();
+        if (instance == null) {
+            instance = new Crud();
         }
         return instance;
     }
-    public  void connectDatabase() {
+
+    private Crud() {
         try {
-                Class.forName(JDBC_DRIVER).newInstance();
-            System.out.println("Connecting to database.....");
-            this.connection = DriverManager.getConnection(DB_URL + dbName+"?useUnicode=true&characterEncoding=UTF-8","root","root");
+            Class.forName(JDBC_DRIVER);
+            this.connection = DriverManager.getConnection(DB_URL + dbName + "?useUnicode=true&characterEncoding=UTF-8", "root", "root");
 
         } catch (ClassNotFoundException e) {
             System.out.println("JDBC driver not found....");
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
         }
-            }
+    }
+
     public Connection getConnection() {
-               return connection;
+        return connection;
     }
 
 }

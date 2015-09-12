@@ -1,5 +1,7 @@
 package logic;
+
 import crud.CustomerCrud;
+
 public class CustomerLogic {
     //generate customer number
     public static String generateCustomerNumber() {

@@ -3,33 +3,27 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link href="myStyle.css" rel="stylesheet">
-    <style>
-        h1 {
-            color: #998eff
-        }
-    </style>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <title>individualCustomer</title>
 </head>
 <body>
-<form dir="rtl" action="/addIndividualCustomer" method="post">
+<form  action="/addIndividualCustomer" method="post">
 
-    نام :
-    <input type="text" class="text" name="firstName" style="height: 30px">
+First name:
+    <input type="text" class="text" name="firstName" >
     <br><br>
-    نام خانوادگی :
 
-    <input type="text" class="text" name="lastName" style="height: 30px">
+Last name:
+    <input type="text" class="text" name="lastName" >
     <br><br>
-    تاریخ تولد :
+Birth date :
+    <input type="text" class="text" name="birthDate" >
+    <br><br>
+National code :
 
-    <input type="text" class="text" name="birthDate" style="height: 30px">
+    <input type="text" class="text" name="nationalCode" >
     <br><br>
-    کد ملی :
-
-    <input type="text" class="text" name="nationalCode" style="height: 30px">
-    <br><br>
-    <input type="submit" class="button" name="add" value="ثبت" style="font-size: 40px;width: 200px">
+    <input type="submit" class="button" name="add" value="add" style="width: 200px">
 </form>
 
 </body>
